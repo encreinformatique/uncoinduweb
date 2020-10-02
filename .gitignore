@@ -1,0 +1,5 @@
+/.idea
+/.nuxt
+/.env
+/node_modules
+/**/*~

@@ -1,0 +1,19 @@
+{
+  "name": "uncoinduweb",
+  "description": "Un peu de tout dans ce coin du web.",
+  "author": "Julien Devergnies",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.9.0",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2"
+  }
+}
