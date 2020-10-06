@@ -4,5 +4,6 @@ module.exports = {
     ],
     content: {
       // Options
-    }
+    },
+    css: ['@/assets/scss/layout.scss']
 }
