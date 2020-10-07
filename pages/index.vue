@@ -3,12 +3,14 @@
     <h1>{{ page.title }}</h1>
     <nuxt-content :document="page" />
 
-     <app-box v-for="article in articles" :key="article.slug">
-       <template slot="body">
+    <div class="row">
+      <app-box class="col" v-for="article in articles" :key="article.slug">
+        <template slot="body">
           <nuxt-link :to="{name:'blog-slug', params: {slug: article.slug}}">{{ article.title }}</nuxt-link>
           <p v-if="article.excerpt">{{ article.excerpt }}</p>
         </template>
-    </app-box>
+      </app-box>
+    </div>
   </article>
 </template>
 
@@ -49,6 +51,23 @@ li {
 
   p {
     margin: 0;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: stretch;
+
+  .col {
+    display: flexbox;
+    flex-basis: 25%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 </style>

@@ -1,6 +1,7 @@
 /.idea
 /.nuxt
 /.env
+/content/articles/dummy.md
 /dist
 /node_modules
 /**/*~
