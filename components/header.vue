@@ -3,8 +3,9 @@
         <nav class="navbar">
             <div class="left">
                 <nuxt-link to="/"><span class="app-name">{{ appName }}</span></nuxt-link>
-                <nuxt-link to="/">accueil</nuxt-link>
+                <!-- <nuxt-link to="/">accueil</nuxt-link> -->
                 <nuxt-link to="/blog">blog</nuxt-link>
+                <nuxt-link to="/apropos">à propos</nuxt-link>
             </div>
             <div class="right">
                 <a :href="github" target="_blank" class="icon">
@@ -43,6 +44,15 @@ export default {
     color: #333333;
     font-size: 18px;
     font-weight: bold;
+}
+
+
+header.header {
+    background-color: #fdfdff;
+    box-shadow: 0 0 6px rgba(#000000, 0.3);
+    left: 0;
+    position: fixed;
+    top: 0;
 }
 
 @media (min-width: 700px) {

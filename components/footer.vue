@@ -2,8 +2,10 @@
     <footer class="footer">
         <nav class="navbar">
             <div class="left">
+                &copy; 2020 uncoinduweb.com - 
                 <nuxt-link to="/">home</nuxt-link>
                 <nuxt-link to="/blog">blog</nuxt-link>
+                <nuxt-link to="/apropos">à propos</nuxt-link>
             </div>
             <div class="right">
                 <a :href="github" target="_blank" class="icon">
@@ -35,4 +37,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+footer.footer nav a {
+    font-weight: 400;
+    font-size: 14px;
+}
 </style>

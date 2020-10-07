@@ -1,7 +1,7 @@
 ---
 title: "VueJS Amsterdam"
 description: "Un peu d'air avec les conférences en ligne comme VueJS Amsterdam"
-# excerpt: "Participer à des évènements en ligne comme VueJS Amsterdam est un bol d'air, surtout avec les restrictrions causé par le COVID-19."
+excerpt: "Participer à des évènements en ligne est un bol d'air, surtout avec les restrictrions causées par le COVID-19."
 ---
 
 Durant cette époque polluée par le COVID-19, participer à des évènements en ligne comme VueJS Amsterdam est un vrai bol d'air. D'un côté, c'est triste mais c'est également très positif de voir que la vie continue pendant ces temps compliqués.
