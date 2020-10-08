@@ -3,7 +3,7 @@
         <nav class="navbar">
             <div class="left">
                 &copy; 2020 uncoinduweb.com - 
-                <nuxt-link to="/">home</nuxt-link>
+                <nuxt-link to="/" class="sm-hide">home</nuxt-link>
                 <nuxt-link to="/blog">blog</nuxt-link>
                 <nuxt-link to="/apropos">à propos</nuxt-link>
             </div>
@@ -40,5 +40,25 @@ export default {
 footer.footer nav a {
     font-weight: 400;
     font-size: 14px;
+}
+
+footer.footer nav {
+    .left {
+        display: flex;
+            flex: 0 0 100%;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) {
+    footer.footer nav {
+        .right {
+            display: flex;
+            flex: 0 0 50%;
+        }
+    }
 }
 </style>
