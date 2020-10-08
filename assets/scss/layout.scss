@@ -1,5 +1,7 @@
 $background-primary: #f0f0f2;
+$background-secondary: #417796;
 $color-primary: #2E7EEA;
+$color-secondary: #f0f0f2;
 
 *,
 *::before,
@@ -18,7 +20,7 @@ body {
     background-color: $background-primary;
     font-size: 16px;
     line-height: 1.6rem;
-    margin: 0;
+    margin: 60px 0 0;
     padding: 0;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -44,6 +46,16 @@ a {
     background-color: #fdfdff;
     border-radius: 0.5em;
     box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+}
+
+header.header {
+    background-color: $background-secondary;
+    color: $color-secondary;
+
+    a, .app-name {
+        color: $color-secondary;
+        fill: $color-secondary;
+    }
 }
 
 header.header,
@@ -97,13 +109,33 @@ hr {
     border-bottom: #f0f0f2 solid 1px;
 }
 
+.sm-hide {
+    display: none;
+}
+
 @media (min-width: 700px) {
+    body {
+        margin: 0;
+    }
     #wrapper {
         width: 650px;
         margin: 5em auto;
     }
+    header.header {
+        background-color: $background-primary;
+        color: $color-primary;
+
+        a, .app-name {
+            color: $color-primary;
+            fill: $color-primary;
+        }
+    }
     header.header > nav, footer.footer > nav {
         width: 650px;
+    }
+
+    .sm-hide {
+        display: inline;
     }
 }
 
