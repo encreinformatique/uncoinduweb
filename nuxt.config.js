@@ -22,7 +22,12 @@ module.exports = {
     pwa: {
       manifest: {
         name: 'Un Coin du Web',
-        lang: 'fr'
+        lang: 'fr',
+        short_name: 'UCDW',
+        useWebmanifestExtension: true
+      },
+      meta: {
+        theme_color: '#417796'
       }
     }
 }
