@@ -8,6 +8,9 @@ module.exports = {
     modules: [
       '@nuxt/content'
     ],
+    buildModules: [
+      '@nuxtjs/pwa',
+    ],
     content: {
       markdown: {
         prism: {
@@ -15,5 +18,11 @@ module.exports = {
         }
       }
     },
-    css: ['@/assets/scss/layout.scss']
+    css: ['@/assets/scss/layout.scss'],
+    pwa: {
+      manifest: {
+        name: 'Un Coin du Web',
+        lang: 'fr'
+      }
+    }
 }
