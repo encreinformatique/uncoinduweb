@@ -9,7 +9,9 @@ Un Coin du Web n'est pas un site institutionnel. D'ailleurs, si vous voulez en s
 
 ## Les outils utilisés pour développer ce site
 
-Ce site a été développé avec l'éditeur [Visual Studio Code](https://code.visualstudio.com/) de Microsoft. D'ordinaire, j'utilise l'excellent [PHPStorm](https://www.jetbrains.com/phpstorm) de Jetbrains. Mais je souhaitais tester activement VS Code dont les échos sont très bons.
+Depuis mes débuts en programmation en 2001, j'ai utilisé de tout en terme d'IDE. Dreamweaver, (pas longtemps car je trouvais le code général trop lourd) Notepad++ (si si...), Sublime Text ou plus récemment un peu Vim. Au quotidien, j'utilise PHPStorm de Jetbrains. Il est complet, englobant dans un même environnement le terminal, le VCS (outils de versionning, en gros **git** ou **svn**) la possibilité d'executer les tests à la volée, etc... Mais pour ce site, je souhaitais utiliser autre chose. PHPStorm est surtout prévu pour le PHP, c'est une sorte de surcouche à Webstorm.
+
+Ce site a donc été développé avec l'éditeur [Visual Studio Code](https://code.visualstudio.com/) de Microsoft. D'ordinaire, j'utilise l'excellent (et payant) [PHPStorm](https://www.jetbrains.com/phpstorm) de Jetbrains. Mais je souhaitais tester activement VS Code dont les échos sont très bons.
 
 Visual Studio Code me rappelle parfois Sublime Text pour sa vitesse. Il faut dire que les outils de Jetbrains ne sont pas particulièrement rapide, surtout au lancement.
 
