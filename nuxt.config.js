@@ -28,6 +28,9 @@ module.exports = {
       },
       meta: {
         theme_color: '#417796'
+      },
+      workbox: {
+        clientsClaim: false
       }
     }
 }
