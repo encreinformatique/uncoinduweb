@@ -6,7 +6,8 @@ module.exports = {
       ]
     },
     modules: [
-      '@nuxt/content'
+      '@nuxt/content',
+      '@nuxtjs/robots',
     ],
     buildModules: [
       '@nuxtjs/pwa',
@@ -29,5 +30,11 @@ module.exports = {
       meta: {
         theme_color: '#417796'
       }
-    }
+    },
+    robots: [
+      {
+        UserAgent: '*',
+        Allow: '/'
+      }
+    ]
 }
