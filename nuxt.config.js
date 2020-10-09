@@ -16,6 +16,10 @@ module.exports = {
       markdown: {
         prism: {
           theme: 'static/css/prism-vsc-dark-plus.css'
+        },
+        externalLinks: {
+          target: "_blank",
+          rel: "noopener"
         }
       }
     },
@@ -24,8 +28,7 @@ module.exports = {
       manifest: {
         name: 'Un Coin du Web',
         lang: 'fr',
-        short_name: 'UCDW',
-        useWebmanifestExtension: true
+        short_name: 'UCDW'
       },
       meta: {
         theme_color: '#417796'
