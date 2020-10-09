@@ -18,6 +18,16 @@ VueJS 3 est prometteur a bien des égards. La vitesse est à l'honneur avec l'ou
 
 Vite pourrait en quelque sorte remplacer webpack pour le développement. Les performances montrées lors de la démo étaient très interessante car le build était presque instantané. Et Vite inclut le __hot module replacement__ à une vitesse très impressionante également.
 
+## Nuxt content
+
+Nuxt content est relativement puisque la [version 1](https://github.com/nuxt/content/releases/tag/v1.0.0) date de mai dernier. Je ne l'utilisais pas et la présentation faite par Debbie m'a donne envie de voir ce que ça donne. Cela fait un moment que je souhaite avancer sur les CMS headless ou gérer simplement le contenu. C'est aussi un peu à cause de lui que j'ai créé ce site.
+
+L'utilisation est simple puisqu'il parse le contenu du dossier `content/`. Sa promesse est d'être un **Git-based Headless CMS**. Pour ce site, j'utilise des fichiers au format markdown. Je suis familier avec ce format très utilisé sur Github.
+
+```markdown
+L'utilisation est simple puisqu'il parse le contenu du dossier `content/`. Sa promesse est d'être un **Git-based Headless CMS**.
+```
+
 ## Cypress, Chakra UI...
 
 Outre le gros morceau avec la mise en ligne de VueJS 3, de nombreuses présentations étaient à suivre. Parmi celles qui m'ont plus et que je souhaite regarder de près, [Cypress](https://www.cypress.io/features/) est un outil de testing très visuel. Les tests utilisent le navigateur et sont soit disant  plus simples qu'utiliser Jasmine et le rendu serait plus fiable que le spaghetti retourné par Jest.
