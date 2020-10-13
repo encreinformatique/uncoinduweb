@@ -8,6 +8,10 @@ module.exports = {
     modules: [
       '@nuxt/content',
       '@nuxtjs/robots',
+      ['nuxt-matomo', {
+        matomoUrl: '//matomo.encre-informatique.com/',
+        siteId: 13
+      }]
     ],
     buildModules: [
       '@nuxtjs/pwa',

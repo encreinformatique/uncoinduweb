@@ -11,7 +11,8 @@
   "dependencies": {
     "@nuxt/content": "^1.9.0",
     "@nuxtjs/robots": "^2.4.2",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "nuxt-matomo": "^1.2.3"
   },
   "devDependencies": {
     "@nuxtjs/pwa": "^3.1.2",
