@@ -1,6 +1,7 @@
 ---
 title: "Un Coin du Web"
 description: "Un Coin du Web est un site développé avec NuxtJS pour parler de tout, de rien et surtout de développement Web."
+meta_title: "Réflexions et développement Web"
 ---
 
 Un Coin du Web rassemble mes réflexions sur le développement Web, le monde digital et l'environnement en ligne. Au niveau technique, il est développé avec NuxtJS et le code source se trouve sur Github.

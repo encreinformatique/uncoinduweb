@@ -32,11 +32,12 @@ Pour l'hébergement, l'idée est encore une fois de tester. Je souhaitais donc m
 En conclusion, voici l'environnement de travail pour ce site à ce jour : (octobre 2020) 
 
 * [Visual Studio Code](https://code.visualstudio.com/) de Microsoft
-* [Vercel](https://vercel.com/) pour l'hébergement
+* [Vercel](https://vercel.com/) pour l'hébergement et la prévisualisation
 * [Github](https://github.com/) pour le versioning
 * TravisCI pour les tests[^1]
 * [NuxtJS](https://nuxtjs.org/) 2
 * [nuxt/content](https://content.nuxtjs.org/fr) pour la gestion du contenu en **Markdown**
+* [nuxt-matomo](https://github.com/pimlie/nuxt-matomo) pour l'ajout du code Matomo
 * _scss_ sans UI type Tailwind, Chakra ou Vuetify
 
 [^1]: Je n'ai pas encore mis en place le CI pour ce site
