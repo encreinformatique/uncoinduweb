@@ -26,7 +26,7 @@ export default {
                     content: this.page.description
                 },
             ],
-            title: this.page.title
+            title: this.page.meta_title
         }
     },
   async asyncData ({ $content }) {
