@@ -1,5 +1,5 @@
 ---
-title: "PHP8 arrive cette hiver"
+title: "PHP8 arrive cet hiver"
 description: "Ce fut un long chemin depuis PHP 3 à PHP 8."
 ---
 
@@ -52,3 +52,7 @@ class DummyClass
      }
 }
 ```
+
+## JIT Compiler
+
+D'autres ajouts concernent la performance. Il est tot pour savoir si le bond de performances sera aussi marqué qu'entre PHP5.6 et PHP7.0. Mais c'est dans cette optique qu'est prévu le **JIT compiler**. On a eu le préchargement avec PHP7.4 qui, à mon avis, n'est pas complétement utilisable. Il faut en effet n'avoir qu'une application sur le serveur ou VPS pour l'activer et en tirer profit.
