@@ -7,9 +7,9 @@ De PHP 3 à PHP 7.4, ce fut un long voyage. La programmation orientée objet est
 
 ## De la liberté totale à la rigueur imposée
 
-Au début des années 2000, PHP4 est venu au monde. Mais c'était assez récent et ce n'était pas toujours disponible. C'était le petit nouveau en ville pour les hébergeurs. Je me souviens avoir dû utiliser des astuces comme l'extension `.php4` pour utiliser PHP4 au lieu de PHP3. C'était vraiment facile à apprendre, faisant beaucoup d'erreurs. C'était alors une langue vraiment pardonnable. Et j'adore ça à l'époque.
+Au début des années 2000, PHP4 est venu au monde. Mais c'était assez récent et ce n'était pas toujours disponible sur les hébergeurs mutualisés. C'était le petit nouveau en ville pour les hébergeurs. Je me souviens avoir dû utiliser des astuces comme l'extension `.php4` pour utiliser PHP4 au lieu de PHP3. C'était vraiment facile à apprendre, même en faisant beaucoup d'erreurs et on pouvait alors apprendre "sur le tas". C'était vraiment un langage qui pardonne les erreurs. Et j'adorais ça à l'époque.
 
-Aujourd'hui, avec la nouvelle version à venir, PHP va vers la rigueur. Cela ne me dérange pas, j'en suis vraiment content. **Types stricts**, **attributs** ou le "**nullsafe operator**" vont vraiment aider à maintenir le code ou à renforce la qualité de code.
+Depuis PHP7.0, et encore plus aujourd'hui avec la nouvelle version à venir, PHP se dirige vers la rigueur. Cela ne me dérange pas, au contraire. Je trouve que c'est une bonne chose car les avantages sont certains: amélioration de la qualité du code, simplicité dans la maintenance etc... Des nouveautés comme les **Types stricts**, **attributs** ou le "**nullsafe operator**" vont vraiment aider à maintenir le code ou à renforcer la qualité de code.
 
 ## Quelles nouveautés pour PHP 8
 
