@@ -15,8 +15,10 @@ module.exports = {
       }]
     ],
     buildModules: [
+      '@nuxt/components',
       '@nuxtjs/pwa',
     ],
+    components: true,
     content: {
       markdown: {
         prism: {

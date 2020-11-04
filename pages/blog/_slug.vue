@@ -40,3 +40,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+img {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  max-width: 100%;
+}
+</style>
