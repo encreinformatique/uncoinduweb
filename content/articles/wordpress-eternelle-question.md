@@ -1,5 +1,7 @@
 ---
 title: Wordpress ou pas Wordpress? L'éternelle question?
+description: "Wordpress est le CMS le plus utilisé du web."
+excerpt: "Wordpress est utilisé pour plus de la moitié des sites web."
 ---
 
 _Cet article est en cours d'écriture. Je souhaitais publier une première version pour ensuite compléter au fur et à mesure._
