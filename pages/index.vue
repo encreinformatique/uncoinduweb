@@ -5,8 +5,10 @@
 
     <ul>
       <li v-for="article in articles" :key="article.slug">
-        <nuxt-link :to="{name:'blog-slug', params: {slug: article.slug}}">{{ article.title }}</nuxt-link>
-        <p v-if="article.excerpt">{{ article.excerpt }}</p>
+        <nuxt-link :to="{name:'blog-slug', params: {slug: article.slug}}">
+          {{ article.title }}
+          <p v-if="article.excerpt">{{ article.excerpt }}</p>
+        </nuxt-link>
       </li>
     </ul>
     <!--
