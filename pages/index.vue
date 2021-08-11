@@ -3,14 +3,7 @@
     <h1>{{ page.title }}</h1>
     <nuxt-content :document="page" />
 
-    <div class="row">
-      <app-box class="col" v-for="article in articles" :key="article.slug">
-        <template slot="body">
-          <nuxt-link :to="{name:'blog-slug', params: {slug: article.slug}}">{{ article.title }}</nuxt-link>
-          <p v-if="article.excerpt">{{ article.excerpt }}</p>
-        </template>
-      </app-box>
-    </div>
+    <blog-posts :articles="articles" />
   </article>
 </template>
 
@@ -39,7 +32,8 @@ export default {
     }
   },
   components: {
-    AppBox
+    AppBox,
+    BlogPosts: () => import("@/components/blogPosts")
   }
 }
 </script>
