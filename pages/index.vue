@@ -3,26 +3,7 @@
     <h1>{{ page.title }}</h1>
     <nuxt-content :document="page" />
 
-    <ul>
-      <li v-for="article in articles" :key="article.slug">
-        <nuxt-link :to="{name:'blog-slug', params: {slug: article.slug}}">
-          {{ article.title }}
-          <p v-if="article.excerpt">{{ article.excerpt }}</p>
-        </nuxt-link>
-      </li>
-    </ul>
-    <!--
-    <div class="row">
-      <app-box class="col" v-for="article in articles" :key="article.slug">
-        <template slot="body">
-          <nuxt-link :to="{name:'blog-slug', params: {slug: article.slug}}">
-            {{ article.title }}
-            <p v-if="article.excerpt">{{ article.excerpt }}</p>
-          </nuxt-link>
-        </template>
-      </app-box>
-    </div>
-    -->
+    <blog-posts :articles="articles" />
   </article>
 </template>
 
@@ -51,21 +32,16 @@ export default {
     }
   },
   components: {
-    AppBox
+    AppBox,
+    BlogPosts: () => import("@/components/blogPosts")
   }
 }
 </script>
 
 <style lang="scss" scoped>
-ul {
-  list-style: none;
-  padding-left: 0;
-  padding-right: 0;
-  
-  li {
-    border-bottom: 1px solid #f0f0f2;
-    padding: 0.5rem;
-  }
+li {
+  border-bottom: 1px solid #f0f0f2;
+  padding: 0.5rem;
 
   p {
     margin: 0;

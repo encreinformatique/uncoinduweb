@@ -1,6 +1,6 @@
 $background-primary: #f0f0f2;
 $background-secondary: #417796;
-$color-primary: #2E7EEA;
+$color-primary: #1D5CB0;
 $color-secondary: #f0f0f2;
 
 *,
@@ -27,15 +27,34 @@ body {
 
 a {
     color: $color-primary;
+    position: relative;
     text-decoration: none;
+    transition: .3s ease all;
 
     &:active,
     &:visited {
         color: $color-primary;
     }
 
+    &::before {
+        content: "";
+        background-color: $color-primary;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: -3px;
+        opacity: 0;
+        transform: scaleX(0);
+        transition: .3s ease transform,.3s ease opacity;
+    }
+
     &:hover {
-        text-decoration: underline;
+        // text-decoration: underline;
+        &::before {
+            opacity: 1;
+            transform: scaleX(1);
+        }
     }
 }
 
@@ -55,6 +74,14 @@ header.header {
     a, .app-name {
         color: $color-secondary;
         fill: $color-secondary;
+    }
+
+    .app-name {
+        background: linear-gradient(90deg,$color-primary, $background-secondary);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
@@ -145,8 +172,10 @@ hr {
     }
     header.header > nav, footer.footer > nav {
         a {
-            padding-left: 16px;
-            padding-right: 16px;
+            margin-left: 16px;
+            margin-right: 16px;
         }
     }
 }
+
+@import "_posts";

@@ -1,0 +1,25 @@
+ul.blog-posts {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  
+  li {
+    border-bottom: 1px solid #f0f0f2;
+    padding: 0.5rem;
+
+    a {
+      font-size: 1.1rem;
+      font-weight: bold;
+
+      p {
+        color: #333;
+        font-size: 1.0rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
