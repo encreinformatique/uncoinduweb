@@ -37,7 +37,7 @@ En général, c'est la panique à bord mais heureusement, il existe des moyens a
 Dans l'ordre, dans `wp-config.php`, on peut ajouter ces trois lignes pour activer le débogage dans un fichier log, situé par défaut dans `wp-content/debug.log`.
 
 ```php
-define('WP_DEBUG', true);
+define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', false );
 ```
