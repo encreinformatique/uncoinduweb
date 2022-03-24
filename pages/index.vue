@@ -25,7 +25,7 @@ export default {
   async asyncData ({ $content }) {
     const page = await $content('accueil').fetch()
     const articles = await $content('articles')
-      .sortBy('createdAt', 'desc')
+      .sortBy('publication', 'desc')
       .fetch()
 
     return {

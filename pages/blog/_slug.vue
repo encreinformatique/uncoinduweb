@@ -1,7 +1,8 @@
 <template>
   <article>
     <h1>{{ page.title }}</h1>
-    <p class="text-italic">Première publication le {{ formatDate(page.createdAt) }}, dernière édition le {{ formatDate(page.updatedAt) }}.</p>
+    <p class="text-italic">Première publication le {{ formatDate(page.publication) }}.</p>
+    <!--, dernière édition le {{ formatDate(page.updatedAt) }}-->
 
     <nav>
       <ul>
