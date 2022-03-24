@@ -2,6 +2,7 @@
 title: "PHP8 arrive cet hiver"
 description: "Ce fut un long chemin depuis PHP 3 à PHP 8."
 excerpt: "PHP 8.0 est prévu pour le 26 novembre 2020 et les nouveautés sont nombreuses."
+publication: "2020-10-02"
 ---
 
 De PHP 3 à PHP 7.4, ce fut un long voyage. La programmation orientée objet est désormais la norme. La qualité est désormais obligatoire. Et la gestion des packages était très pratique pour améliorer la maintenance.
