@@ -2,6 +2,7 @@
 title: "Symfony World is coming"
 description: "Déjà repoussé, Symfony World se profile enfin en décembre"
 excerpt: "Le premier Symfony World risque d'être très intéressant au vu du programme annoncé."
+publication: "2020-10-02T10:58:51.640Z"
 ---
 
 Sans surprise, le COVID-19 aura marqué cette année de son emprunte en modifier le calendrier évènementiel. La liste des grandes compétitions sportives dont la date a été repoussée est longue, très longue. Je pense aux Jeux Olympiques de Tokyo, à la Formule 1 ou encore à l'Euro 2020. La liste n'est évidemment pas exhaustive. Plus proche de moi, des conférences ont parfois vu leur format modifié en devenant onlines ou proposant une disponibilité sur le web. Le [Symfony World](https://live.symfony.com/2020-world/) est l'une d'entre elles.

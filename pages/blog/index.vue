@@ -11,21 +11,23 @@
 import AppBox from '~/components/box.vue';
 
 export default {
-    head() {
-        return {
-            meta: [
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: this.page.description
-                },
-            ],
-            title: this.page.title
-        }
-    },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.description
+        },
+      ],
+      title: this.page.title
+    }
+  },
   async asyncData ({ $content }) {
     const page = await $content('blog').fetch()
-    const articles = await $content('articles').fetch()
+    const articles = await $content('articles')
+      .sortBy('publication', 'desc')
+      .fetch()
 
     return {
       page,

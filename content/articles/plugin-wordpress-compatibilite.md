@@ -2,6 +2,7 @@
 title: "La joie des plugins Wordpress et PHP par l'exemple"
 description: "Si Wordpress est pratique, c'est parfois la galère et source d'erreurs."
 excerpt: "Si Wordpress est pratique, c'est parfois la galère et source de prise de tête. Un exemple."
+publication: "2022-03-16T10:58:51.640Z"
 ---
 
 Avec la chasse aux performances imposée par Google, la moindre milliseconde est importante. Sur certains environnements, c'est plus simple et parfois,

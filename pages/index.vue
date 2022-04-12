@@ -10,21 +10,23 @@
 <script>
 import AppBox from '~/components/box'
 export default {
-    head() {
-        return {
-            meta: [
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: this.page.description
-                },
-            ],
-            title: this.page.meta_title
-        }
-    },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.description
+        },
+      ],
+      title: this.page.meta_title
+    }
+  },
   async asyncData ({ $content }) {
     const page = await $content('accueil').fetch()
-    const articles = await $content('articles').fetch()
+    const articles = await $content('articles')
+      .sortBy('publication', 'desc')
+      .fetch()
 
     return {
       page,

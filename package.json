@@ -9,15 +9,15 @@
     "start": "nuxt start"
   },
   "dependencies": {
-    "@nuxt/content": "^1.9.0",
-    "@nuxtjs/robots": "^2.4.2",
-    "nuxt": "^2.14.6",
-    "nuxt-matomo": "^1.2.3"
+    "@nuxt/content": "^1.15.1",
+    "@nuxtjs/robots": "^2.5.0",
+    "nuxt": "^2.15.8",
+    "nuxt-matomo": "^1.2.4"
   },
   "devDependencies": {
     "@nuxt/components": "^1.1.1",
-    "@nuxtjs/pwa": "^3.1.2",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.2"
+    "@nuxtjs/pwa": "^3.3.5",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^10.2.0"
   }
 }

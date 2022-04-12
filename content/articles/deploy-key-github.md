@@ -2,6 +2,7 @@
 title: "Ajouter une clef SSH dans Github"
 description: "L'ajout d'une clef SSH pour Github est simple à réaliser."
 excerpt: "L'ajout d'une clef SSH sur Github en quelques étapes."
+publication: "2020-11-02T10:58:51.640Z"
 ---
 
 *Cet article est surtout destiné aux chefs de projets ou personnes cherchant à comprendre l'intéret des clefs SSH pour git. Le but n'est donc pas d'être précis d'un point de vue technique mais surtout d'être simple à lire et comprendre.*
