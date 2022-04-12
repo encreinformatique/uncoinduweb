@@ -71,7 +71,7 @@ Dans un monde idéal, le développeur corrige son plugin. D'ailleurs, cela me pa
 développeur (apparemment une agence) qui au final répond que "nous n'avons pas pu reproduire le problème avec PHP 8.0.0" (????? ils auraient pu tester sur une 
 version plus récente comme 8.0.15 par exemple) et ils ont fermé le ticket. En gros, le problème n'est pas un souci pour eux. Oooookay. Même avec les logs, ils 
 refusent de chercher et de corriger l'erreur ? Du coup, ça ne va pas être simple. J'ai réouvert le ticket sur wordpress.org et un nouveau sur leur site.
-On verra bien.
+~~On verra bien.~~ Et pour le coup, le support technique a été plus réactif, répondant le lendemain et prenant en compte le feedback. La correction n'a pas tardé non plus.
 
 En attendant, cela me laisse avec une problématique : comment mettre à jour la version de PHP si le plugin **Essential Addons for Elementor** bloque et que l'éditeur
 refuse de corriger ou mettra du temps?
