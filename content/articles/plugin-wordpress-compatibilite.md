@@ -9,6 +9,10 @@ Avec la chasse aux performances imposée par Google, la moindre milliseconde est
 ça l'est beaucoup moins. Aujourd'hui, je prends un exemple concrêt avec un [plugin Wordpress](https://uncoinduweb.com/blog/wordpress-eternelle-question):
 **Essential Addons for Elementor**. Pourquoi ai-je choisi ce plugin? Tout simplement car c'est le dernier cas à date que j'ai eu.
 
+> Édition du 12 avril 2022
+> L'éditeur a mis à jour, ainsi qu'Elementor, les plugins qui posait problème. L'éditeur de **Essential Addons for Elementor** m'a répondu le lendemain du ticket et Elementor quelques jours après la création de 'issue sur Github. Cela me surprend que cela arrive si tard (PHP 8.0 date de novembre 2020) mais mieux vaut tard que
+> jamais. 🙏
+
 ## Le contexte
 
 Comme je faisais remarquer plus haut, la guerre du SEO fait que les sites doivent prêter attention à la vitesse. Dans cette optique, certaines technologies
@@ -49,12 +53,12 @@ Et là, dans le fichier, la belle erreur :
 PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/XXX/public_html/wp-content/plugins/essential-addons-for-elementor-lite/includes/Traits/Generator.php:343
 ```
 
-La ligne 342 à 344 sont les suivantes :
+La ligne 342 à 344 sont les suivantes : (j'ai réduit l'indentation pour cet article)
 
 ```php
-					foreach ( $this->registered_elements[ $element ][ 'dependency' ][ $type ] as $file ) {
-				      ${$file[ 'type' ]}[ $file[ 'context' ] ][] = $file[ 'file' ];
-					}
+    foreach ( $this->registered_elements[ $element ][ 'dependency' ][ $type ] as $file ) {
+        ${$file[ 'type' ]}[ $file[ 'context' ] ][] = $file[ 'file' ];
+    }
 ```
 
 Pour ceux qui n'y pigent rien (pourquoi es-tu sur cette page du coup?) l'erreur est tout simplement de considérer que `$file` est un _array_ alors qu'il s'agit d'un _string_
@@ -91,11 +95,11 @@ Donc j'ai pris le parti de corriger l'erreur **après avoir remonté le problèm
 **ligne 342 à 346**
 
 ```php
-					foreach ( $this->registered_elements[ $element ][ 'dependency' ][ $type ] as $file ) {
-					    if ( is_array( $file ) ) {
-						      ${$file[ 'type' ]}[ $file[ 'context' ] ][] = $file[ 'file' ];
-					    }
-					}
+    foreach ( $this->registered_elements[ $element ][ 'dependency' ][ $type ] as $file ) {
+        if ( is_array( $file ) ) {
+            ${$file[ 'type' ]}[ $file[ 'context' ] ][] = $file[ 'file' ];
+        }
+    }
   ```
 
 Les standards de programmation de Wordpress me piquent un peu les yeux avec les espaces dans les parenthèses mais il faut s'y faire dans ce cas précis.
