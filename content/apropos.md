@@ -13,7 +13,7 @@ Depuis mes débuts en programmation en 2001, j'ai utilisé de tout en terme d'ID
 
 Ce site a donc été développé avec l'éditeur [Visual Studio Code](https://code.visualstudio.com/) de Microsoft. D'ordinaire, j'utilise l'excellent (et payant) [PHPStorm](https://www.jetbrains.com/phpstorm) de Jetbrains. Mais je souhaitais tester activement VS Code dont les échos sont très bons.
 
-Visual Studio Code me rappelle parfois Sublime Text pour sa vitesse. Il faut dire que les outils de Jetbrains ne sont pas particulièrement rapide, surtout au lancement.
+Visual Studio Code me rappelle parfois Sublime Text pour sa vitesse. Il faut dire que les outils de Jetbrains ne sont pas particulièrement rapides, surtout au lancement.
 
 ## Côté système, VueJS et SSR à l'honneur
 
