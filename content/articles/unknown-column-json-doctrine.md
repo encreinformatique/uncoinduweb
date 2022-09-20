@@ -1,7 +1,7 @@
 ---
-title: 'Unknown column type "json_array" requested'
+title: "Unknown column type \"json_array\" requested"
 description: "Lisez-moi si vous souhaitez savoir comment résoudre une erreur doctrine json_array inconnu"
-excerpt: "L'erreur unknown columns type "json_array" est commune et facile à résoudre, si on sait où chercher."
+excerpt: "L'erreur unknown columns type \"json_array\" est commune et facile à résoudre, si on sait où chercher."
 publication: "2022-09-20T18:46:34.640Z"
 ---
 
