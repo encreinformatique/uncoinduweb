@@ -1,7 +1,9 @@
 <template>
   <ul class="blog-posts">
     <li v-for="article in articles" :key="article.slug">
-      <nuxt-link :to="{name:'blog-slug', params: {slug: article.slug}}">
+      <!-- <nuxt-link :to="{name:'blog-slug', params: {slug: article.slug}}"> -->
+      <!-- <nuxt-link :to="'/blog/'+ article.slug"> -->
+      <nuxt-link :to="article._path.replace('/articles/', '/blog/')">
         {{ article.title }}
         <p class="text-italic">Première publication le {{ formatDate(article.publication) }}.</p>
         <p v-if="article.excerpt">{{ article.excerpt }}</p>

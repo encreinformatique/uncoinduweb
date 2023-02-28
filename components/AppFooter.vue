@@ -2,10 +2,11 @@
     <footer class="footer">
         <nav class="navbar">
             <div class="left">
-                &copy; 2020 uncoinduweb.com - 
+                &copy; 2023 uncoinduweb.com - 
                 <nuxt-link to="/" class="sm-hide">home</nuxt-link>
                 <nuxt-link to="/blog">blog</nuxt-link>
                 <nuxt-link to="/apropos">à propos</nuxt-link>
+                <nuxt-link to="/cookies">cookies</nuxt-link>
             </div>
             <div class="right">
                 <a :href="github" target="_blank" rel="noopener" class="icon">
@@ -45,12 +46,12 @@ footer.footer nav {
     }
 }
 
-@media (min-width: 700px) {
-    footer.footer nav {
-        .right {
-            display: flex;
-            flex: 0 0 50%;
-        }
-    }
-}
+// @media (min-width: 700px) {
+//     footer.footer nav {
+//         .right {
+//             display: flex;
+//             flex: 0 0 50%;
+//         }
+//     }
+// }
 </style>

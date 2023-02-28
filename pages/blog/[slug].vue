@@ -2,35 +2,36 @@
   <article>
     <h1>{{ page.title }}</h1>
     <p class="text-italic">Première publication le {{ formatDate(page.publication) }}.</p>
-    <!--, dernière édition le {{ formatDate(page.updatedAt) }}-->
 
     <nav>
       <ul>
-        <li v-for="link of page.toc" :key="link.id">
+        <li v-for="link of page.body.toc.links" :key="link.id">
           <nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
         </li>
       </ul>
     </nav>
 
     <hr>
-
-    <ContentRenderer :value="page" />
+    
+    <ContentDoc :path="'/articles/'+route.params.slug" />
   </article>
 </template>
 
 <script setup>
-useHead({
-  meta: [
-    {
-      hid: 'description',
-      name: 'description',
-      content: this.page.description
-    },
-  ],
-  title: this.page.title
-})
+const route = useRoute()
 
-const { page } = await useAsyncData('hello', () => queryContent('/articles/'+params.slug).findOne())
+const page = await queryContent('/articles/'+route.params.slug).findOne()
+
+// useHead({
+//   meta: [
+//     {
+//       hid: 'description',
+//       name: 'description',
+//       content: this.page.description
+//     },
+//   ],
+//   title: this.page.title
+// })
 
 function formatDate(date) {
   const options = { year: 'numeric', month: 'long', day: 'numeric' }

@@ -1,21 +1,20 @@
 <template>
   <article>
-    <h1>{{ page.title }}</h1>
-    <ContentRenderer :value="page" />
+    <!-- <h1>{{ page.title }}</h1> -->
+    <!-- <ContentRenderer :value="page" /> -->
+    <ContentDoc path="/apropos" />
   </article>
 </template>
 
-<script setup>
+<!-- <script setup>
 useHead({
   meta: [
     {
       hid: 'description',
       name: 'description',
-      content: this.page.description
+      content: page.description
     },
   ],
-  title: this.page.title
+  title: page.title
 });
-
-const { page } = await useAsyncData('apropos', () => queryContent('/apropos').findOne())
-</script>
+</script> -->

@@ -3,7 +3,7 @@
         <app-header/>
 
         <div id="wrapper">
-            <slot />
+            <NuxtPage />
         </div>
 
         <app-footer/>
