@@ -22,20 +22,10 @@
     </header>
 </template>
 
-<script>
-export default {
-    computed: {
-        appName() {
-            return process.env.APP_NAME ?? "Un Coin du Web";
-        },
-        github() {
-            return process.env.APP_GITHUB;
-        },
-        twitter() {
-            return process.env.APP_TWITTER;
-        }
-    }
-}
+<script setup>
+const appName = computed(() => process.env.APP_NAME ?? "Un Coin du Web");
+const github = computed(() => process.env.APP_GITHUB);
+const twitter = computed(() => process.env.APP_TWITTER);
 </script>
 
 <style scope>

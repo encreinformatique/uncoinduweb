@@ -6,12 +6,6 @@
     </div>
 </template>
 
-<script>
-export default {
-    
-}
-</script>
-
 <style lang="scss" scoped>
 .box {
     border-color: #f0f0f2;

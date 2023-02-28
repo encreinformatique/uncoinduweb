@@ -1,4 +1,4 @@
-module.exports = {
+export default defineNuxtConfig({
     head: {
       titleTemplate: '%s - Un Coin du Web',
       meta: [
@@ -9,16 +9,12 @@ module.exports = {
     modules: [
       '@nuxt/content',
       '@nuxtjs/robots',
-      ['nuxt-matomo', {
-        matomoUrl: '//matomo.encre-informatique.com/',
-        siteId: 13
-      }]
+      // ['nuxt-matomo', {
+      //   matomoUrl: '//matomo.encre-informatique.com/',
+      //   siteId: 13
+      // }],
+      '@kevinmarrec/nuxt-pwa',
     ],
-    buildModules: [
-      '@nuxt/components',
-      '@nuxtjs/pwa',
-    ],
-    components: true,
     content: {
       markdown: {
         prism: {
@@ -47,4 +43,4 @@ module.exports = {
         Allow: '/'
       }
     ]
-}
+});
