@@ -23,21 +23,20 @@ Pour le système, plutôt que d'utiliser un Wordpress que je connais bien, j'ai 
 
 Là où cela m'interesse davantage, c'est la recherche et le test d'extensions ou plugins que je n'ai pas l'occasion d'utiliser (pour l'instant) sur d'autres projets. Je pense à [nuxt-content](https://content.nuxtjs.org/fr). Nuxt/content implique l'utilisation de PrismJS et de Markdown. Étant utilisateur de Github, je "mange" du markdown toute la journée.
 
+En octobre 2020, le site "tournait" sur NuxtJS V2. **Depuis février 2023**, ce site a été migré sur Nuxt V3, incluant VueJS 3 et `@nuxt/content` dans sa dernière version à date. (V2) Ce fut une occasion parfaite pour s'entrainer avec une double migration de framework, (Nuxt, VueJS) ce qui n'est pas toujours simple avec des projets NodeJS.
+
 ## Et l'hébergement dans tout ça?
 
 Pour l'hébergement, l'idée est encore une fois de tester. Je souhaitais donc m'amuser un peu avec un hosting prévu pour Nuxt. J'avais retenu Netlify et Vercel. Au final, je me suis décanté pour Vercel sans vraiment de raison. Mais [Guillermo Rauch de Vercel](https://twitter.com/rauchg) était venu présenter l'hébergeur lors du VueJS Amsterdam donc je l'ai retenu. De toute façon, Netlify et Vercel reçoivent de très échos.
 
 ## En résumé et conclusion
 
-En conclusion, voici l'environnement de travail pour ce site à ce jour : (octobre 2020) 
+En conclusion, voici l'environnement de travail pour ce site à ce jour : (février 2023) 
 
 * [Visual Studio Code](https://code.visualstudio.com/) de Microsoft
 * [Vercel](https://vercel.com/) pour l'hébergement et la prévisualisation
 * [Github](https://github.com/) pour le versioning
-* TravisCI pour les tests[^1]
-* [NuxtJS](https://nuxtjs.org/) 2
+* [Nuxt](https://nuxtjs.org/) V3 (après migration depuis NuxtJS V2)
 * [nuxt/content](https://content.nuxtjs.org/fr) pour la gestion du contenu en **Markdown**
 * [nuxt-matomo](https://github.com/pimlie/nuxt-matomo) pour l'ajout du code Matomo
 * _scss_ sans UI type Tailwind, Chakra ou Vuetify
-
-[^1]: Je n'ai pas encore mis en place le CI pour ce site
