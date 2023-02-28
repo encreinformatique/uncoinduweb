@@ -1,43 +1,26 @@
 <template>
   <article>
     <h1>{{ page.title }}</h1>
-    <nuxt-content :document="page" />
+    <ContentRenderer :value="page" />
 
-    <blog-posts :articles="articles" />
+    <BlogPosts :articles="articles" />
   </article>
 </template>
 
-<script>
-import AppBox from '~/components/box'
-export default {
-  head() {
-    return {
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.page.description
-        },
-      ],
-      title: this.page.meta_title
-    }
-  },
-  async asyncData ({ $content }) {
-    const page = await $content('accueil').fetch()
-    const articles = await $content('articles')
-      .sortBy('publication', 'desc')
-      .fetch()
+<script setup>
+useHead({
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: this.page.description
+    },
+  ],
+  title: this.page.meta_title
+})
 
-    return {
-      page,
-      articles
-    }
-  },
-  components: {
-    AppBox,
-    BlogPosts: () => import("@/components/blogPosts")
-  }
-}
+const { page } = await useAsyncData('accueil', () => queryContent('/accueil').findOne())
+const { articles } = await useAsyncData('articles', () => queryContent('/articles').sortBy('publication', 'desc').findOne())
 </script>
 
 <style lang="scss" scoped>

@@ -10,19 +10,11 @@
   </ul>
 </template>
 
-<script>
-export default {
-  props: {
-    articles: {
-      type: Array,
-      default: []
-    }
-  },
-  methods: {
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('fr', options)
-    }
-  }
+<script setup>
+const props = defineProps({ articles: {type: Array, default: []} })
+
+function formatDate(date) {
+  const options = { year: 'numeric', month: 'long', day: 'numeric' }
+  return new Date(date).toLocaleDateString('fr', options)
 }
 </script>

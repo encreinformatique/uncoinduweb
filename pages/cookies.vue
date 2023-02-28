@@ -1,31 +1,21 @@
 <template>
   <article>
     <h1>{{ page.title }}</h1>
-    <nuxt-content :document="page" />
+    <ContentRenderer :value="page" />
   </article>
 </template>
 
-<script>
-import AppBox from '~/components/box'
-export default {
-    head() {
-        return {
-            meta: [
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: this.page.description
-                },
-            ],
-            title: this.page.title
-        }
+<script setup>
+useHead({
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: this.page.description
     },
-  async asyncData ({ $content }) {
-    const page = await $content('cookies').fetch()
+  ],
+  title: this.page.title
+});
 
-    return {
-      page
-    }
-  }
-}
+const { page } = await useAsyncData('cookies', () => queryContent('/cookies').findOne())
 </script>

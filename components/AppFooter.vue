@@ -1,10 +1,11 @@
 <template>
-    <header class="header">
+    <footer class="footer">
         <nav class="navbar">
             <div class="left">
-                <nuxt-link to="/"><span class="app-name">{{ appName }}</span></nuxt-link>
-                <nuxt-link to="/blog" class="sm-hide">blog</nuxt-link>
-                <nuxt-link to="/apropos" class="sm-hide">à propos</nuxt-link>
+                &copy; 2020 uncoinduweb.com - 
+                <nuxt-link to="/" class="sm-hide">home</nuxt-link>
+                <nuxt-link to="/blog">blog</nuxt-link>
+                <nuxt-link to="/apropos">à propos</nuxt-link>
             </div>
             <div class="right">
                 <a :href="github" target="_blank" rel="noopener" class="icon">
@@ -19,48 +20,37 @@
                 </a>
             </div>
         </nav>
-    </header>
+    </footer>
 </template>
 
-<script>
-export default {
-    computed: {
-        appName() {
-            return process.env.APP_NAME ?? "Un Coin du Web";
-        },
-        github() {
-            return process.env.APP_GITHUB;
-        },
-        twitter() {
-            return process.env.APP_TWITTER;
-        }
-    }
-}
+<script setup>
+const github = computed(() => process.env.APP_GITHUB);
+const twitter = computed(() => process.env.APP_TWITTER);
 </script>
 
-<style scope>
-.app-name {
-    font-size: 18px;
-    font-weight: bold;
+<style lang="scss" scoped>
+footer.footer nav a {
+    font-weight: 400;
+    font-size: 14px;
 }
 
+footer.footer nav {
+    .left {
+        display: flex;
+            flex: 0 0 100%;
+    }
 
-header.header {
-    box-shadow: 0 0 6px rgba(#000000, 0.3);
-    left: 0;
-    position: fixed;
-    top: 0;
+    .right {
+        display: none;
+    }
 }
 
 @media (min-width: 700px) {
-    .app-name {
-        margin-right: 12px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .app-name {
-        margin-right: 36px;
+    footer.footer nav {
+        .right {
+            display: flex;
+            flex: 0 0 50%;
+        }
     }
 }
 </style>
