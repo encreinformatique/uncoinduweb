@@ -48,7 +48,7 @@ C'est ça que doit recevoir le chef de projet ou le client pour ajouter à Githu
 
 Pour renseigner la clef SSH dans Github, il faut se rendre sur la page de configuration du compte, puis dans [*SSH and GPG keys*](https://github.com/settings/ssh/new). Le formulaire est simple et relativement explicite.
 
-<app-img :filename="'img/github-ssh.png'" :alt="''"></app-img>
+<img src="/img/github-ssh.png" alt="déployer une clef SSH dans Github" />
 
 Un conseil est de prêter attention au titre. Un titre explicite permet d'identifier l'ordinateur ou le serveur d'où provient la clef SSH. Cela permet par la suite de détruire la clef ou, au contraire, de ne pas la détruire en la confondant avec une autre. Dans mon cas, j'utilise le nom d'hébergeur, le nom du serveur et un tag separé par un tiret. Chacun son choix et sa nomenclature.
 
